@@ -7,6 +7,10 @@ table.resumeContact {
     margin-right: auto;
 }
 
+img.flavorImage {
+    width: 25%;
+}
+
 div.sectionBody {
     padding-left: 25pt;
 }
