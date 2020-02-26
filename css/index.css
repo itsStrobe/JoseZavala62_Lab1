@@ -1,0 +1,126 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    color : #4F545F;
+    margin : 0;
+    padding : 0;
+}
+
+#header {
+    text-align: center;
+}
+
+.resumeContact {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resumeContact th, .resumeContact td {
+    min-width: 25%;
+}
+
+.resumeContact th:nth-of-type(even), .resumeContact td:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+.navTop {
+    background-color: #CCCCCC;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.navMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #CCCCCC;
+    float: left;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.navMenu > li {
+    float: left;
+    padding: 20px;
+}
+
+.navMenu > li:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #999999;
+}
+
+.flavorImage {
+    width: 40%;
+}
+
+div.sectionBody {
+    padding-left: 25pt;
+}
+
+ul.descBody {
+    padding-left: 25pt;
+}
+
+span.descTitle {
+    font-weight: bold;
+}
+
+.sectionHead {
+    border-top-style: dashed;
+}
+
+.sectionBody div:nth-of-type(even) {
+    background-color: #f2f2f2;
+}
+
+span.descDate {
+    font-style: italic;
+    text-align: right;
+}
+
+span.descPosition {
+    font-style: italic;
+}
+
+p.descPosition {
+    font-style: italic;
+}
+
+address {
+    text-align: center;
+}
+
+/* Responsive navigation menu (for mobile devices) */
+@media screen and (max-width: 700px) {
+    .navMenu > li {
+        position: relative;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        left: 0;
+        margin: 0;
+        transform: none;
+        float: none;
+    }
+
+    .flavorImage {
+        width: 100%;
+    }
+
+    .resumeContact {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: left;
+    }
+
+    .resumeContact tr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resumeContact td:nth-of-type(even), .resumeContact th:nth-of-type(even) {
+        background-color: #f2f2f2;
+    }
+}
